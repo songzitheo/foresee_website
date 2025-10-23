@@ -4,7 +4,8 @@ A modern, responsive website for the ForeSee mobile app - a child-friendly app t
 
 ## Features
 
-- **Hero Section**: Eye-catching introduction with app mockups
+- **Hero Section**: Eye-catching introduction with app mockups and waitlist signup
+- **Waitlist Modal**: Beautiful popup form to collect early user interest
 - **About Section**: Clear explanation of what ForeSee is
 - **How It Works**: Step-by-step guide with visual icons
 - **Features**: Highlights of key app benefits
@@ -12,6 +13,7 @@ A modern, responsive website for the ForeSee mobile app - a child-friendly app t
 - **Download Section**: CTA with parent dashboard preview
 - **FAQ**: Comprehensive answers to common questions
 - **Responsive Design**: Works beautifully on all devices
+- **Supabase Integration**: Stores waitlist signups in database
 
 ## Tech Stack
 
@@ -45,7 +47,12 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+4. **Set up Supabase database** (IMPORTANT):
+   - See `SUPABASE_SETUP.md` for detailed instructions
+   - Create the `waitlist` table using the provided SQL
+   - This is required for the waitlist feature to work
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 ## Available Scripts
 
